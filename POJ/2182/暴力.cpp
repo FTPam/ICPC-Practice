@@ -9,7 +9,9 @@ int main() {
 	int c[MAX];	// 输出
 	int n;
 	cin >> n;
-	for (int i = 0; i < n; i++) {
+	a[0] = 0;
+	b[0] = 1;
+	for (int i = 1; i < n; i++) {
 		cin >> a[i];
 		b[i] = i + 1;
 	}
@@ -27,6 +29,6 @@ int main() {
 		}
 	}
 	for (int i = 0; i < n; i++) {
-		cout << c[i] << " ";
+		cout << c[i] << endl;
 	}
 }
